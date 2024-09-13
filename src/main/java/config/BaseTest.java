@@ -14,9 +14,9 @@ public class BaseTest {
     public void setup() throws Exception {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "Android");
-        capabilities.setCapability("deviceName", "emulator-5554");
-        capabilities.setCapability("appPackage", "com.chaldal.poached");
-        capabilities.setCapability("appActivity", "com.chaldal.poached.MainActivity");
+        capabilities.setCapability("deviceName", "SPhone");
+        capabilities.setCapability("udid", "emulator-5554");
+        capabilities.setCapability("app", "src/test/java/resources/chaldal.apk");
         capabilities.setCapability("automationName", "UiAutomator2");
 
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), capabilities);
